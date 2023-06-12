@@ -54,8 +54,10 @@ Q1. Develop a **logistic regression model** to predict the response to the campa
 
 Q2. Use your model to calculate a **predictive scores** for a client to suscribe the deposit. How is the distribution of the subscription scores obtained? Is it different for the subscribers and the non-subscribers?
 
-Q3. Based on your model, if we set a target of 4,000 subscriptions, how many calls would we need, to hit the target?
+Q3. Set a threshold for the scores to adequate the model to your business purpose.
 
-Q4. If we set a budget 10,000 calls, how will we select the clients to be called? How many subscriptions will we get?
+Q4. Based on your model, if we set a target of 4,000 subscriptions, how many calls would we need, to hit the target?
 
-Q5. Suppose that you decide to use your model as suggested in question Q4, but calling 20% of your clients. How would you validate your model for that application, based on a **train/test split**?
+Q5. If we set a budget 10,000 calls, how will we select the clients to be called? How many subscriptions will we get?
+
+Q6. Suppose that you decide to use your model as suggested in question Q5, but calling 20% of your clients. How would you validate your model for that application, based on a **train/test split**?
