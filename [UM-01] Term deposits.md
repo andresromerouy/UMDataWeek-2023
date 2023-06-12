@@ -1,4 +1,4 @@
-# [E1.1] Direct marketing of term deposits
+# [UM-01] Term deposits
 
 ## Introduction
 
@@ -10,7 +10,7 @@ A Portuguese institution has been offering term deposits to its clients for the 
 
 The bank has been using its own contact-center to carry out direct marketing campaigns. The telephone was the dominant marketing channel, although sometimes with an auxiliary use of the Internet online banking channel (*e.g*. by showing information to a specific targeted client). Furthermore, each campaign was managed in an integrated fashion and the results for all channels were outputted together.
 
-The manager in charge of organizing the next campaign is expected to optimize the effort. His objective is to find a **predictive model**, based on data of the preceding campaign, which can explain the success of a contact, *i.e*. if the client subscribes the deposit. Such model can increase the campaign's efficiency by identifying the main characteristics that affect success, helping in a better management of the available resources (eg human effort, phone calls and time) and the selection of a high quality and affordable set of potential clients. To be useful for the direct campaign, a predictive model should allow to reduce the number of calls in a relevant way without loosing a relevant number of subscribers.
+The manager in charge of organizing the next campaign is expected to optimize the effort. His objective is to find a **predictive model**, based on data of the preceding campaign, which can explain the success of a contact, *i.e*. if the client subscribes the deposit. Such model can increase the campaign's efficiency by identifying the main characteristics that affect success, helping in a better management of the available resources (*e.g*. human effort, phone calls and time) and the selection of a high quality and affordable set of potential clients. To be useful for the direct campaign, a predictive model should allow to reduce the number of calls in a relevant way without loosing a relevant number of subscribers.
 
 ## The data set
 
