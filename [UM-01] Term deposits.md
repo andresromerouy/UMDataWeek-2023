@@ -52,7 +52,7 @@ Source: S Moro, P Cortez & P Rita (2014), A data-driven approach to predict the 
 
 Q1. Develop a **logistic regression model** to predict the response to the campaign (`deposit`) from the other variables.
 
-Q2. Use your model to obtain a **predictive score** for every client. How is the distribution of the scores? Is it different for the subscribers and the non-subscribers?
+Q2. Use your model to calculate a **predictive scores** for a client to suscribe the deposit. How is the distribution of the subscription scores obtained? Is it different for the subscribers and the non-subscribers?
 
 Q3. Based on your model, if we set a target of 4,000 subscriptions, how many calls would we need, to hit the target?
 
