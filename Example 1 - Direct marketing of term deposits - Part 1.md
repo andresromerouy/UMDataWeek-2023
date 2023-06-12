@@ -1,4 +1,4 @@
-# Example - Direct marketing of term deposits
+# Example 1 - Direct marketing of term deposits - Part 1
 
 ## Introduction
 
@@ -16,33 +16,33 @@ The manager in charge of organizing the next campaign is expected to optimize th
 
 The data for this example come from the previous phone campaign of the bank, which involved a total of 45,211 contacts. During that campaign, an attractive long-term deposit application, with good interest rates, was offered. The contacts led to 5,289 subscriptions, a 11.7% **conversion rate**.
 
-The data set combines demographic data with data about the interaction of the client and the bank. The variables are:
+The data set combines demographic data with data about the interaction of the client and the bank. The original variables have been transformed into **dummy variables** (1/0) so they can be directly entered in an equation:
 
 * Age in years (`age`).
 
-* Type of job (`job`). The values are 'admin', 'unknown', 'unemployed', 'management, 'housemaid', 'student', 'retired', 'self-employed', 'entrepreneur', 'technician' and 'services'.
+* Type of job (`job`). The values are 'admin', 'blue-collar', 'entrepreneur', 'housemaid', 'management', 'retired', 'self-employed', 'student', 'technician', 'unknown' and 'unemployed'. Converted to twelve dummies.
 
-* Marital status (`marital`). The values are 'married', 'divorced' and 'single'.
+* Marital status (`marital`). The values are 'married', 'divorced' and 'single'. Converted to three dummies.
 
-* Education level (`education`). The values are 'unknown', 'secondary', 'primary' and 'tertiary'.
+* Education level (`education`). The values are 'unknown', 'secondary', 'primary' and 'tertiary'. Converted to four dummies.
 
-* Has credit in default (`default`)? The values are 'yes' and 'no'.
+* Has credit in default (`default`)? The values are 'yes' and 'no'. Converted to a dummy (1 for 'yes' and 0 for 'no').
 
 * Average yearly balance in euros (`balance`).
 
-* Has housing loan? (`housing`). The values are 'yes' and 'no'.
+* Has housing loan? (`housing`). The values are 'yes' and 'no'. Converted to a dummy (1 for 'yes' and 0 for 'no').
 
-* Has personal loan? (`loan`). The values are 'yes' and 'no'.
+* Has personal loan? (`loan`). The values are 'yes' and 'no'. Converted to a dummy (1 for 'yes' and 0 for 'no').
 
-* Usual communication channel (`contact`). The values are 'unknown', 'telephone' and 'cellular'.
+* Usual communication channel (`contact`). The values are 'unknown', 'telephone' and 'cellular'. Converted to three dummies.
 
 * Duration of last contact before the campaign in seconds (`duration`). 
 
-* Number of days passed by after the client was last contacted from a previous campaign (`pdays`). The entry is -1 when the client has not been not previously contacted.
+* Number of days passed by after the client was last contacted from a previous campaign (`pdays`). The entry is -1 when the client has not been previously contacted.
 
 * Number of contacts performed before this campaign and for this client (`previous`).
 
-* Outcome of the previous marketing campaign (`poutcome`). The values are 'unknown', 'other', 'failure' and 'success'.
+* Outcome of the previous marketing campaign (`poutcome`). The values are 'unknown', 'other', 'failure' and 'success'. Converted to four dummies.
 
 * Has the client subscribed a term deposit (`deposit`)? The values are 'yes' and 'no'.
 
@@ -50,8 +50,13 @@ Source: S Moro, P Cortez & P Rita (2014), A data-driven approach to predict the 
 
 ## Questions
 
-Q1. Develop a **logistic regression model** to predict the response to the campaign (`deposit`) from the other variables of this data set. 
+Q1. Develop a **logistic regression model** to predict the response to the campaign (`deposit`) from the other variables.
 
-Q2. Based on your model, if we set a target of 4,000 subscriptions, how many calls would we need, to hit the target?
+Q2. Use your model to obtain a **predictive score** for every client. How is the distribution of the scores? Is it different for the subscribers and the non-subscribers?
 
-Q3. If we set a budget 10,000 calls, how will we select the clients to be called? How many subscriptions will we get?
+Q3. Based on your model, if we set a target of 4,000 subscriptions, how many calls would we need, to hit the target?
+
+Q4. If we set a budget 10,000 calls, how will we select the clients to be called? How many subscriptions will we get?
+
+Q5. Suppose that you decide to use your model as suggested in question Q4, but calling 20% of your clients. How would you validate your model for that application, based on a **train/test split**?
+
