@@ -18,6 +18,8 @@ The data for this example come from the previous phone campaign of the bank, whi
 
 The data set combines demographic data with data about the interaction of the client and the bank. The original variables have been transformed into **dummy variables** (1/0) so they can be directly entered in an equation:
 
+* Account number (`accnum`)).
+
 * Age in years (`age`).
 
 * Type of job (`job`). The values are 'admin', 'blue-collar', 'entrepreneur', 'housemaid', 'management', 'retired', 'self-employed', 'student', 'technician', 'unknown' and 'unemployed'. Converted to twelve dummies.
