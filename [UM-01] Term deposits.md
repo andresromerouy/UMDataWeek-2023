@@ -14,7 +14,7 @@ The manager in charge of organizing the next campaign is expected to optimize th
 
 ## The data set
 
-The data for this example come from the previous phone campaign of the bank, which involved a total of 45,211 contacts. During that campaign, an attractive long-term deposit application, with good interest rates, was offered. The contacts led to 5,289 subscriptions, a 11.7% **conversion rate**.
+The data for this lecture come from the previous phone campaign of the bank, which involved a total of 45,211 contacts. During that campaign, an attractive long-term deposit application, with good interest rates, was offered. The contacts led to 5,289 subscriptions, a 11.7% **conversion rate**.
 
 The data set combines demographic data with data about the interaction of the client and the bank. The original variables have been transformed into **dummy variables** (1/0) so they can be directly entered in an equation:
 
