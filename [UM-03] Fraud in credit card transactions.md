@@ -80,7 +80,7 @@ Additional features:
 
 * `CUSTOMER_ID_NB_TX_1DAY_WINDOW`, number of transactions by the customer in that day.
 
-* `CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW`
+* `CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW`, average spending amount by the customer in that day.
 
 * `CUSTOMER_ID_NB_TX_7DAY_WINDOW`, number of transactions by the customer in the last 7 days.
 
