@@ -56,7 +56,7 @@ In credit card fraud detection, data typically consist of transaction data, coll
 
 * **Customer-related features**: customer number, type of customer (*e.g*. low/high profile), etc.
 
-This lecture uses a simulated data set, generated in two steps, starting with a set of a few basic features and enlarging it with some feature engineering. In the first step, 1,744,532 transactions were generated for the period from April 30th to September 30th (22 complete weeks). The initial features are:
+This lecture uses a simulated data set, generated in two steps, starting with a set of a few basic features and enlarging it with some feature engineering. In the first step, 1,475,853 transactions were generated for the period from April 30th to September 30th (22 complete weeks). The initial features are:
 
 * `TRANSACTION_ID`, a unique identifier of the transaction.
 
@@ -70,9 +70,7 @@ This lecture uses a simulated data set, generated in two steps, starting with a 
 
 * `TX_FRAUD`, a dummy feature (1/0) for the transaction to be fraudulent.
 
-The data set contains 13,081 (0.88%) fraudulent transactions, with a realistic degree of class imbalance.
-
-Additional features:
+This initial data set contains 13,081 (0.89%) fraudulent transactions, a realistic degree of class imbalance. Some additional features were added:
 
 * `TX_DURING_WEEKEND`, a dummy for the transaction taking place during the weekend.
 
@@ -102,8 +100,18 @@ Additional features:
 
 * `TERMINAL_ID_RISK_30DAY_WINDOW`, average number of frauds on the terminal in the last 30 days.
 
+The data set comes in five zipped CSV files, one for each month:  `fraud_may.csv.zip`, `fraud_jun.csv.zip`,  `fraud_jul.csv.zip`,  `fraud_aug.csv.zip` and  `fraud_sep.csv.zip`.
+
 Source: YA Le Borgne, W Siblini, B Lebichot & G Bontempi (2022), *Reproducible Machine Learning for Credit Card Fraud Detection - Practical Handbook*, Université Libre de Bruxelles. April data have discarded, to get a set of complete weeks covering five months. 
 
 ## Questions
 
-Q1. 
+Q1. Take as the target the column `TX_FRAUD` and slecet an appropriate set of features for predicting this target, Pick the first week as the **training period** and, the second week as the **delay period** and the third week as the **testing period**.
+
+Q2. Train a **logistic regression model** using the data of the training period, and test it using the data of the test period. For testing, use the **precision top-100**: assuming that you can inspect only 100 transactions every day, pick those transactions based on your model. The precision top-100 is the percentage of the transactions inspected that are effectively fraudulent.
+
+Q3. Test your model using the **card precision top-100**: assuming that you can inspect only 100 customers every day, and that, if at least one transaction from a customer is suspected, all the transactions of that customer that day are going to be inspected, pick those customers based on your model. The card precision top-100 is the percentage of the customers inspected that effectively have at least one fraudulent transaction.
+
+Q4. Complete the testing of questions Q2 and Q3 by comparing, for every day, the number of fraudulent transactions and fraudulent cards with the numbers effectively inspected.
+
+Q5. The data set covers 22 complete weeks, so you can perform this analysis 20 times. The first training period started on Monday April 30th and the first test period on Monday May 14th. The last training period will start on Monday September 10th and the last test period on Monday September 24th. Is the performance of your model consistent across weeks? 
