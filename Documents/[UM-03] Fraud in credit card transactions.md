@@ -108,7 +108,7 @@ Q1. Take the column `TX_FRAUD` as the target and select an appropriate set of fe
 
 Q2. Train a **logistic regression model** using the data of the training period, and test it using the data of the test period. For testing, use the **precision top-100**. Assuming that you can inspect only 100 transactions every day, pick those 100 transactions based on your model. The precision top-100 is the percentage of the transactions inspected that are effectively fraudulent.
 
-Q3. Test your model using the **card precision top-100**. Assume that: (a) you can inspect only 100 customers every day, and  (b) if at least one transaction from a customer is suspected, all the transactions of that customer in that day are going to be inspected. Pick those 100 customers based on your model. The card precision top-100 is the percentage of the customers inspected that effectively have at least one fraudulent transaction.
+Q3. Test your model using the **card precision top-100**. Assume that: (a) you can inspect only 100 customers every day, and (b) if at least one transaction from a customer is suspected, all the transactions of that customer in that day are going to be inspected. Pick those 100 customers based on your model. The card precision top-100 is the percentage of the customers inspected that effectively have at least one fraudulent transaction.
 
 Q4. Complete the testing of questions Q2 and Q3 by comparing, for every day, the number of fraud transactions and fraud cards with the numbers effectively inspected.
 
