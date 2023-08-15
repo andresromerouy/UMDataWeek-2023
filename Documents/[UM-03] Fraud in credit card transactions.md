@@ -100,7 +100,7 @@ This initial data set contains 13,081 (0.89%) fraud transactions, a realistic de
 
 The data set comes in five zipped CSV files, one for each month:  `fraud_may.csv.zip`, `fraud_jun.csv.zip`,  `fraud_jul.csv.zip`,  `fraud_aug.csv.zip` and  `fraud_sep.csv.zip`.
 
-Source: YA Le Borgne, W Siblini, B Lebichot & G Bontempi (2022), *Reproducible Machine Learning for Credit Card Fraud Detection - Practical Handbook*, Université Libre de Bruxelles. April data have discarded, to get a set of complete weeks covering five months. 
+Source: YA Le Borgne, W Siblini, B Lebichot & G Bontempi (2022), *Reproducible Machine Learning for Credit Card Fraud Detection - Practical Handbook*, Université Libre de Bruxelles. April data have been discarded, to get a set of complete weeks covering five months. 
 
 ## Questions
 
